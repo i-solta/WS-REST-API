@@ -4,8 +4,14 @@ const ContactSchema= new schema({
     name:{
         type:String,
     },
+    phone:{
+        type:Number,
+    },
+    email:{
+        type:String,
+        unique:true,
+    },
    
-  
     dateCreation:{
        type:Date,
        default:Date.now()
